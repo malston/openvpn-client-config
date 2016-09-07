@@ -1,0 +1,23 @@
+client
+dev tun
+proto tcp
+remote 73.78.100.219 1194
+comp-lzo
+resolv-retry infinite
+nobind
+persist-key
+persist-tun
+mute-replay-warnings
+remote-cert-tls server
+verb 3
+mute 20
+tls-client
+<ca>
+{ca-certificate-data}
+</ca>
+<cert>
+{client-certificate-signed-by-operator-data}
+</cert>
+<key>
+{client-private-key-data}
+</key>
